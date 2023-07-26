@@ -1,4 +1,3 @@
-import "./main.css";
 const mContainer = document.getElementById("mainContainer");
 const searchInput = document.getElementById("searchInput");
 //render countries in html
