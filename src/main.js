@@ -2,7 +2,7 @@ import "./main.css";
 const mContainer = document.getElementById("mainContainer");
 const searchInput = document.getElementById("searchInput");
 //render countries in html
-function renderCountries(countries) {
+export function renderCountries(countries) {
   const countriesHTML = `
   <container
   class="flex m-4 flex-row md:flex-col w-[80vw] md:w-fit  items-center p-2 rounded-md bg-slate-50 shadow-md"
@@ -28,7 +28,7 @@ function renderCountries(countries) {
 }
 let stData;
 // fetch data from api
-function getData() {
+export function getData() {
   fetch("https://restcountries.com/v3.1/all")
     .then((res) => res.json())
     .then((data) => {
